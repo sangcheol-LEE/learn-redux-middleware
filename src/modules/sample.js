@@ -1,7 +1,7 @@
-import * as api from "../lib/api" 
+import * as api from "../lib/api"
 
 
-//액션 타입 선언 
+// 액션 타입 선언
 // 한 요청 당 세 개를 만들어야 함
 
 const GET_POST = 'sample/GET_POST';
@@ -51,7 +51,7 @@ export const getUsers = () => async dispatch => {
   }
 }
 
-// 초기 상태 
+// 초기 상태
 const initialState = {
   loading : {
     GET_POST : false,
@@ -61,7 +61,7 @@ const initialState = {
   users : null
 }
 
-// 리듀서 
+// 리듀서
 
 const sampleReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -74,7 +74,7 @@ const sampleReducer = (state = initialState, action) => {
           GET_POST : true // 요청 시작
         }
       }
-    
+
     case GET_POST_SUCCESS :
       return {
         ...state,

@@ -1,10 +1,13 @@
 import React from 'react';
 import Sample from "./components/Sample"
+import Samples from './components/Samples';
 
 const App = () => {
   return (
     <div>
-      <Sample />
+      {/* <Sample /> */}
+      <hr />
+      <Samples/>
     </div>
   );
 };
